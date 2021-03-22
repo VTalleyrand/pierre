@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;700;900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 62.5%;
+  font-family: inter, sans-serif;
+  color: white;
+  overflow-X: hidden;
+}
+
+body {
+width: auto;
+height: auto;
+min-height: 100vh;
+min-width: 32rem;
+background: -webkit-linear-gradient(to right, #eea849, #f46b45); 
+background: linear-gradient(to right, #eea849, #f46b45);
+
+background: -webkit-linear-gradient(to right, #780206, #061161); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #780206, #061161);
+
+overflow-X: hidden;
+}
+
+
+.glass-bg {
+ width: 100%;
+height: 100%;
+min-height: 100vh;
+background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 12px );
+-webkit-backdrop-filter: blur( 12px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+main {
+  height: 80vh;
+  width: 100vw;
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: movetext 4000ms ease-in-out forwards;
+}
+
+
+nav {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: flex-end; 
+}
+
+
+.nav-links {
+  list-style: none;
+  position: absolute;
+  color: white;
+ background: #f46b45;
+background: -webkit-linear-gradient(to right, #eea849, #f46b45); 
+background: linear-gradient(to right, #eea849, #f46b45);
+
+background: -webkit-linear-gradient(to right, #780206, #061161); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #780206, #061161);
+
+  height: 100vh;
+  left: 100%;
+  width:100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s ease-in-out;
+  z-index: 2;
+  
+}
+
+.nav-links.active {
+  transform: translateX(-100%);
+}
+
+nav li {
+  margin-bottom: 6rem;
+}
+
+nav a {
+  color:  white;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.menu-btn {
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-btn-burger {
+  width: 6rem;
+ height: .2rem;
+  border-radius: .3rem;
+  background: white;
+  transition: all 0s ease-in-out;
+  z-index: 5;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+  content: "";
+  width: 6rem;
+ height: .2rem;
+  border-radius: .3rem;
+  background: white;
+ position: absolute;
+   z-index: 5;
+  transition: all .2s ease-in-out;
+}
+
+.menu-btn-burger::before {
+  transform: translateY(-1.4rem);
+}
+
+.menu-btn-burger::after {
+  transform: translateY(1.4rem);
+}
+
+.menu-btn.active .menu-btn-burger {
+  transform: translateX();
+  background: transparent;
+}
+
+.menu-btn.active .menu-btn-burger::before {
+  transform: rotate(45deg);
+}
+
+.menu-btn.active .menu-btn-burger::after {
+  transform: rotate(-45deg);
+}
+
+
+h1 {
+  font-size: 8rem;
+  font-weight: 900;
+ margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+  width: 70rem;
+  line-height: 4.5rem;
+  text-align: center;
+}
+
+h1 span {
+  color: #83001a;
+}
+
+@keyframes movetext {
+  0% {
+    transform: translateY(40rem);
+    opacity: 0;
+  }
+  
+  50% {
+    transform: translateY(-5rem)
+  }
+  
+   100% {
+    transform: translateY(0);
+  }
+}
+
+/* Image Galleries  */
+.selected-works,
+.portrait-works,
+.landscape-works {
+  padding: 0rem 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  grid-auto-rows: 35rem;
+}
+
+
+/* Selected images */
+
+.selected-one {
+  background: url("https://images.pexels.com/photos/6858611/pexels-photo-6858611.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.selected-two {
+  background: url("https://images.pexels.com/photos/7099847/pexels-photo-7099847.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.selected-three {
+  background: url("https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+
+.selected-four {
+  background: url("https://images.pexels.com/photos/1544946/pexels-photo-1544946.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.selected-five {
+  background: url("https://images.pexels.com/photos/531321/pexels-photo-531321.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.selected-six {
+  background: url("https://images.pexels.com/photos/41178/africa-animal-big-carnivore-41178.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+
+/* Portraits images */
+
+.portrait-one {
+  background: url("https://images.pexels.com/photos/167964/pexels-photo-167964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.portrait-two {
+  background: url("https://images.pexels.com/photos/2709385/pexels-photo-2709385.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+}
+
+.portrait-three {
+  background: url("https://images.pexels.com/photos/1684304/pexels-photo-1684304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+
+.portrait-four {
+  background: url("https://images.pexels.com/photos/7207114/pexels-photo-7207114.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.portrait-five {
+  background: url("https://images.pexels.com/photos/3922112/pexels-photo-3922112.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.portrait-six {
+  background: url("https://images.pexels.com/photos/3571340/pexels-photo-3571340.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+/* Landscape images */
+
+.landscape-one {
+  background: url("https://images.pexels.com/photos/927414/pexels-photo-927414.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.landscape-two {
+  background: url("https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.landscape-three {
+  background: url("https://images.pexels.com/photos/1731660/pexels-photo-1731660.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+
+.landscape-four {
+  background: url("https://images.pexels.com/photos/140234/pexels-photo-140234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.landscape-five {
+  background: url("https://images.pexels.com/photos/33582/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.landscape-six {
+  background: url("https://images.pexels.com/photos/301614/pexels-photo-301614.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+
+
+.selected-img, 
+.portrait-img, 
+.landscape-img {
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+  transition: all 200ms ease-in-out;
+  overflow: hidden;
+}
+
+.selected-works .selected-img:hover,
+.portrait-works .portrait-img:hover,
+.landscape-works .landscape-img:hover {
+ transform: scale(1.01);
+  opacity: .9;
+}
+
+.tall-img {
+  grid-row: span 2/auto;
+}
+
+.wide-img {
+  grid-column: span 2/auto;
+  grid-row: span 2/auto;
+}
+
+
+.contact  {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-box {
+  width: 60rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+textarea {
+  background: none;
+  width: 60rem;
+  max-width: 60rem;
+  border: none;
+  margin-bottom: 2rem;
+  outline: none;
+  position: relative;
+  padding-left: 1rem;
+  color: white;
+}
+
+input {
+  height: 4rem;
+  border-bottom: .1rem solid white;
+  margin-bottom: 2rem;
+  outline: none;
+}
+
+textarea {
+  height: 35rem;
+  border: .1rem solid white;
+  resize: none;
+  outline: none;
+  margin-bottom: 4rem;
+  padding-top: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: inter, sans-serif;
+  font-size: 1rem;
+}
+
+.contact-btn {
+  width: 10rem;
+  height: 3.7rem;
+  border-radius: 3rem;
+  border: none;
+  background: #742636;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.contact-btn:hover {
+  background: #83001a;
+}
+
+@media screen and (max-width: 800px) {
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 900;
+   
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    line-height: 2.5rem;
+    max-width: 30rem;
+  }
+
+  input,
+textarea,
+.contact-box {
+  width: 80%;
+
+}
+
+@media screen and (max-width: 420px) {
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 900;
+   
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    line-height: 2.5rem;
+    max-width: 30rem;
+  }
+  
+
+}
+
+}
