@@ -17,8 +17,8 @@ html {
 
 body {
 width: 100vw;
-height: 100vh;
-min-height: 80rem;
+height: 100%;
+min-height: 100rem;
 min-width: 32rem;
 background: -webkit-linear-gradient(to right, #780206, #061161);
 background: linear-gradient(to right, #780206, #061161);
@@ -29,8 +29,8 @@ position: relative;
 
 .glass-bg {
  width: 100vw;
-height: 100vh;
- min-height: 80rem;
+height: 100%;
+ min-height: 100rem;
 background: rgba( 255, 255, 255, 0.25 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 12px );
