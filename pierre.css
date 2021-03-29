@@ -12,8 +12,9 @@ html {
   font-size: 62.5%;
   font-family: inter, sans-serif;
   color: white;
-  overflow-X: hidden;
-}
+  overflow: hidden;
+/*   overflow-X: hidden;
+} */
 
 body {
 width: auto;
@@ -22,7 +23,8 @@ min-height: 100vh;
 min-width: 32rem;
 background: -webkit-linear-gradient(to right, #780206, #061161);
 background: linear-gradient(to right, #780206, #061161);
-overflow-x: hidden;
+ overflow: hidden;
+/* overflow-x: hidden; */
 position: relative;
 }
 
