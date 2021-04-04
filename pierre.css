@@ -164,12 +164,12 @@ h1 span {
 
 @keyframes movetext {
   0% {
-    transform: translateY(40rem);
+    transform: translateY(20rem);
     opacity: 0;
   }
   
   50% {
-    transform: translateY(-5rem)
+    transform: translateY(-3rem)
   }
   
    100% {
