@@ -44,7 +44,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: movetext 4000ms ease-in-out forwards;
+  animation: movetext 2000ms ease-in-out forwards;
 }
 
 
