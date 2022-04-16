@@ -16,16 +16,15 @@ Live site: https://vportfoliopierre.netlify.app
 
 #### Features:
 
-- About Section
-- List of technologies
-- Project Section
-- Contact Section
+- Homepage with animation
+- 3 pages with galleries for different categories of images
+- Contact page with contact form
 
 <hr/>
 
 #### Takeaways:
-- CSS flexbox is great for positioning items most of the time.
-- CSS Animation is a great to add basic interactions to your site without JavaScript
+- CSS Grid allows for even more customization than flexbox, although in most cases it's an overkill. 
+- CSS Animation is a great to add basic interactions to your site without JavaScript.
 
 <hr/>
 
