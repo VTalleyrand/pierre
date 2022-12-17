@@ -7,7 +7,7 @@ Live site: https://vportfoliopierre.netlify.app
 
 
 
-#### Objective(s): 
+#### Goal(s): 
 - Practice to gain a better grasp on CSS Grid 
 - Build a gallery with pure CSS
 - CSS animation
